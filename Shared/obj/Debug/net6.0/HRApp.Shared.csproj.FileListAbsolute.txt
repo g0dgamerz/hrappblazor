@@ -1,0 +1,5 @@
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Shared\obj\Debug\net6.0\HRApp.Shared.csproj.AssemblyReference.cache
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Shared\obj\Debug\net6.0\HRApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Shared\obj\Debug\net6.0\HRApp.Shared.AssemblyInfoInputs.cache
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Shared\obj\Debug\net6.0\HRApp.Shared.AssemblyInfo.cs
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Shared\obj\Debug\net6.0\HRApp.Shared.csproj.CoreCompileInputs.cache

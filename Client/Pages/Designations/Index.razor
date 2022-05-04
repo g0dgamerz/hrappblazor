@@ -1,0 +1,74 @@
+﻿@page "/designation"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using HRAppMudBlazorProject.Shared
+@inject IJSRuntime JsRuntime
+@inject NavigationManager NavigationManager
+@*@attribute [Authorize]*@
+@inject HttpClient Http
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Designation</h1>
+@*<p><a class="btn btn-primary" href="/designation/add">Add</a></p>*@
+<MudButton Variant="Variant.Filled" EndIcon="@Icons.Filled.Add" Color="Color.Info" Link="/designation/add">Create</MudButton>
+
+@*<MudButton Variant="Variant.Outlined" Color="Color.Primary" Link="/designation/add">Create</MudButton>
+*@<br />
+<br />
+
+@if (designations == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <MudTable Items="@designations" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+
+        <HeaderContent>
+            <MudTh>Designation Name</MudTh>
+            <MudTh>Salary</MudTh>
+            <MudTh>Action</MudTh>
+        </HeaderContent>
+
+        <RowTemplate>
+            <MudTd DataLabel="Designation Name">@context.DesignationName</MudTd>
+            <MudTd DataLabel="Salary">@context.Salary</MudTd>
+            <MudTd DataLabel="Action">
+            <a href="/designation/edit/@context.ID"> <MudFab Color="Color.Tertiary" StartIcon="@Icons.Material.Filled.Edit" /></a>
+           <MudFab Color="Color.Secondary" @onclick="@(() => Delete(context.ID))" StartIcon="@Icons.Filled.Delete" />
+@*                <a class="btn btn-success" href="/designation/edit/@context.ID"><MudIcon Icon="@Icons.Filled.Edit" /></a>
+*@                @*<a class="btn btn-danger" href="/designation/delete/@context.ID">Delete</a>*@
+@*                <button class="btn btn-danger" @onclick="@(() => Delete(context.ID))"><MudIcon Icon="@Icons.Filled.DeleteForever" /></button>
+*@            </MudTd>
+        </RowTemplate>
+
+    </MudTable>
+}
+
+@code {
+    private List<Designation> designations = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            designations = await Http.GetFromJsonAsync<List<Designation>>("api/Designations");
+        }
+        catch (AccessTokenNotAvailableException exception)
+        {
+            exception.Redirect();
+        }
+    }
+
+    protected async Task Delete(int Id)
+    {
+        var desig = designations.First(x => x.ID == Id);
+        if (await JsRuntime.InvokeAsync<bool>("confirm", $"Do you want to delete {desig.DesignationName}'s Record?"))
+        {
+            await Http.DeleteAsync($"api/Designations/{Id}");
+            NavigationManager.NavigateTo("designation");
+            await OnInitializedAsync();
+        }
+    }
+}

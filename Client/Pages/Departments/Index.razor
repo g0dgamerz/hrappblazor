@@ -1,0 +1,68 @@
+﻿@page "/department"
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using HRAppMudBlazorProject.Shared
+@inject IJSRuntime JsRuntime
+@inject NavigationManager NavigationManager
+@*@attribute [Authorize]*@
+@inject HttpClient Http
+
+<PageTitle>Department</PageTitle>
+
+<h1>Department</h1>
+@*<p><a class="btn btn-primary" Variant="Variant.Outlined" href="/department/add">Create</a></p>*@
+<MudButton Variant="Variant.Filled" EndIcon="@Icons.Filled.Add" Color="Color.Info" Link="/department/add">Create</MudButton>
+
+@*<MudButton Variant="Variant.Outlined" Color="Color.Primary" Link="/department/add">Create</MudButton>
+*@<br />
+<br />
+@if (departments == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <MudTable Items="@departments" Hover="true" Breakpoint="Breakpoint.Sm" LoadingProgressColor="Color.Info">
+
+        <HeaderContent>
+            <MudTh>Department Name</MudTh>
+            <MudTh>Action</MudTh>
+        </HeaderContent>
+
+        <RowTemplate>
+            <MudTd DataLabel="Name">@context.DeptName</MudTd>
+            <MudTd DataLabel="Action">
+                        <a href="/department/edit/@context.ID"> <MudFab Color="Color.Tertiary" StartIcon="@Icons.Material.Filled.Edit" /></a>
+           <MudFab Color="Color.Secondary" @onclick="@(() => Delete(context.ID))" StartIcon="@Icons.Filled.Delete" />
+            </MudTd>
+        </RowTemplate>
+
+    </MudTable>
+}
+
+@code {
+    private List<Department> departments = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            departments = await Http.GetFromJsonAsync<List<Department>>("api/Departments");
+        }
+        catch (AccessTokenNotAvailableException exception)
+        {
+            exception.Redirect();
+        }
+    }
+
+    protected async Task Delete(int Id)
+    {
+        var depart = departments.First(x => x.ID == Id);
+        if (await JsRuntime.InvokeAsync<bool>("confirm", $"Do you want to delete {depart.DeptName}'s Record?"))
+        {
+            await Http.DeleteAsync($"api/Departments/{Id}");
+            NavigationManager.NavigateTo("department");
+            await OnInitializedAsync();
+        }
+    }
+}

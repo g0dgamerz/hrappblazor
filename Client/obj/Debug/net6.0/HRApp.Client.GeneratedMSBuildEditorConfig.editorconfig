@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = HRApp.Client
+build_property.RootNamespace = HRApp.Client
+build_property.ProjectDir = D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Departments/Add.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcQWRkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Departments/DeleteDept.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcRGVsZXRlRGVwdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Departments/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Departments/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudHNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Designations/Add.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzaWduYXRpb25zXEFkZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Designations/DeleteDesig.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzaWduYXRpb25zXERlbGV0ZURlc2lnLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Designations/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzaWduYXRpb25zXEVkaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Designations/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzaWduYXRpb25zXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Employees/Add.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEFkZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Employees/Edit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEVkaXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Employees/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWVzXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-i6a3u4acoi
+
+[D:/dotnet/Jidesh-NET/finalProject/HRAPPMudBlazorProject/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-x38cd4n1m1

@@ -1,0 +1,8 @@
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.csproj.AssemblyReference.cache
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.AssemblyInfoInputs.cache
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.AssemblyInfo.cs
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.csproj.CoreCompileInputs.cache
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.MvcApplicationPartsAssemblyInfo.cache
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.RazorAssemblyInfo.cache
+D:\dotnet\Jidesh-NET\finalProject\HRAPPMudBlazorProject\Server\obj\Debug\net6.0\HRApp.Server.RazorAssemblyInfo.cs

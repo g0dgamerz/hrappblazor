@@ -1,0 +1,53 @@
+﻿@page "/designation/add"
+@using HRAppMudBlazorProject.Shared
+@inject HttpClient _httpClient
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JsRuntime
+
+<h3>Add Designation</h3>
+
+<EditForm Model="@designation" OnValidSubmit="Save">
+    <DataAnnotationsValidator />
+    <MudGrid>
+        <MudItem xs="12" sm="8">
+            <MudCard>
+                <MudCardContent>
+                    <MudTextField Label="Designation Name"
+                                  @bind-Value="designation.DesignationName" For="@(() => designation.DesignationName)" />
+                    <MudTextField Label="Salary"
+                                  @bind-Value="designation.Salary" For="@(() => designation.Salary)" />
+                </MudCardContent>
+                @*<MudCardActions>*@
+                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Success" Class="ml-4 mb-4">Add</MudButton>
+                <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Outlined" Class="ml-4 mb-4" OnClick="Cancel">Cancel</MudButton>
+                @*</MudCardActions>*@
+            </MudCard>
+        </MudItem>
+
+    </MudGrid>
+</EditForm>
+
+@code {
+    Designation designation = new Designation();
+
+    protected override async Task OnInitializedAsync()
+    {
+    }
+
+    protected async Task Save()
+    {
+        var response = await Http.PostAsJsonAsync("api/Designations", @designation);
+        Designation? posResponse = await response.Content.ReadFromJsonAsync<Designation>();
+        if (posResponse?.ID > 0)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Saved Successfully!");
+            NavigationManager.NavigateTo("designation");
+        }
+    }
+
+    void Cancel()
+    {
+        NavigationManager.NavigateTo("designation");
+    }
+}
